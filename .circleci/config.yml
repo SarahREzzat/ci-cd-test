@@ -12,7 +12,7 @@ jobs:
     steps:
       - run:
           command: |
-            sleep 20
+            sleep 21
             echo "Hello"
   print_world:
     docker:
