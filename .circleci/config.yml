@@ -17,7 +17,6 @@ jobs:
           root: .
           paths:
            - .
-           - /tmp/test
   print_world:
     docker:
       - image: cimg/base:2020.04
