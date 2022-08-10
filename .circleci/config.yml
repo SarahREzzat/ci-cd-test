@@ -3,7 +3,8 @@ version: 2.1
 commands:
   hello:
     steps:
-      - run: echo "Hello ya nas"
+      - run: 
+          command: echo "Hello ya nas"
 # Use a package of configuration called an orb.
 orbs:
   # Declare a dependency on the welcome-orb
