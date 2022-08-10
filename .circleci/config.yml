@@ -14,13 +14,13 @@ jobs:
           command: |
             echo "Hello world"> output.txt
       - persist_to_workspace:
-            root: .
+          root: .
   print_world:
     docker:
       - image: cimg/base:2020.04
     steps:
       - attach_workspace:
-             at: .
+          at: .
       - run:
           command: cat output.txt 
 workflows:
