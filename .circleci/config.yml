@@ -15,6 +15,9 @@ jobs:
             echo "Hello world"> output.txt
       - persist_to_workspace:
           root: .
+          paths:
+           - .
+           - /tmp/test
   print_world:
     docker:
       - image: cimg/base:2020.04
