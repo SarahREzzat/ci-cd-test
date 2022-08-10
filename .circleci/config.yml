@@ -17,7 +17,7 @@ jobs:
     steps:
       - command: return 1
       - command: echo "hello"
-	when: on_fail
+        when: on_fail
               #        command: |
               #  echo "Hello world"> output.txt
               #  - persist_to_workspace:
