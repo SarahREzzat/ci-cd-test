@@ -11,7 +11,7 @@ orbs:
   welcome: circleci/welcome-orb@0.4.1
 # Orchestrate or schedule a set of jobs
 jobs:
-  job1:
+  jobone:
     docker:
       - image: circleci/node:13.8.0
     steps:
@@ -41,4 +41,4 @@ workflows:
             #  - print_world:
             # requires:
             # - print_hello
-      - job1
+      - jobone
