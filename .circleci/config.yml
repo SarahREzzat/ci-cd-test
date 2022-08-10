@@ -12,15 +12,17 @@ jobs:
     steps:
       - run:
           command: |
-            sleep 21
-            echo "Hello"
+            echo "Hello world"> output.txt
+      - persist_to_workspace:
+            root: .
   print_world:
     docker:
       - image: cimg/base:2020.04
     steps:
+      - attach_workspace:
+             at: .
       - run:
-          command: |
-            echo $Name
+          command: cat output.txt 
 workflows:
   # Name the workflow "welcome"
   welcome:
@@ -29,4 +31,4 @@ workflows:
       - print_world:
           requires:
             - print_hello
-      - print_hello
+            - print_hello:
