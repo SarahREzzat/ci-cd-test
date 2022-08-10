@@ -15,10 +15,12 @@ jobs:
     docker:
       - image: circleci/node:13.8.0
     steps:
-       name: echo hello in fail
-       command: return 1
-       command: echo hello
-       when: on_fail
+      - run:
+          command: return 1
+      - run:
+          name: failed
+          command: echo hello
+          when: on_fail
               #        command: |
               #  echo "Hello world"> output.txt
               #  - persist_to_workspace:
