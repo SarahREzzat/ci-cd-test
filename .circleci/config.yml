@@ -17,7 +17,7 @@ jobs:
     steps:
        name: echo hello in fail
        command: return 1
-       command: echo "hello"
+       command: echo hello
        when: on_fail
               #        command: |
               #  echo "Hello world"> output.txt
