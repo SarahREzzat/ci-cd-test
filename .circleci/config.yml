@@ -23,9 +23,9 @@ jobs:
               #  paths:
               #   - .
 
-  print_world:
-    docker:
-      - image: cimg/base:2020.04
+        # print_world:
+        #docker:
+        #- image: cimg/base:2020.04
         #steps:
             # - attach_workspace:
             #at: .
