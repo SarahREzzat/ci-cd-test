@@ -19,7 +19,7 @@ jobs:
           command: return 1
       - run:
           name: failed
-          command: echo hello
+          command: echo "hello"
           when: on_fail
               #        command: |
               #  echo "Hello world"> output.txt
